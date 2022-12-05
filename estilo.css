@@ -2,11 +2,11 @@
 body{ /*todo o site. adiciona o background ao site*/
     margin: 0;
     padding: 0;
-    background: url(imagens/background.jpg);
+    background: url(imagens/background.jpg) top left;
     background-size: cover;
 }
 
-#container{ /*div ao centro do site onde econtra-se o formulario*/
+#tela-1{ /*div ao centro do site onde econtra-se o formulario*/
     width: 300px;
     height: 300px;
     background-color: rgba(17, 17, 17, 0.671);
@@ -20,15 +20,14 @@ body{ /*todo o site. adiciona o background ao site*/
 }
 
 
-
-#peso{ /*div que cotem o input do peso*/
+#area-peso{ /*div que cotem o input do peso e o label*/
 margin-top: 30px;
 }
-#altura{ /*div que contem o input da altura*/
+#area-altura{ /*div que contem o input da altura e label*/
 margin-top: 30px;
 }
 
-#altura input, #peso input { /*formatações para o input peso e altura*/
+#tela-1 input { /*formatações para todos os inputs da primeira tela*/
 width: 72.8%;
 margin: 0 10%;
 height: 30px;
@@ -38,31 +37,31 @@ padding-left: 20px ;
 
 }
 
-#peso input{ /*Formatação do input onde será inserido o peso*/
+#input-peso{ /*Formatação do input onde será inserido o peso*/
     background: white url(imagens/balanca.png)  no-repeat;
     background-size: 18px;
     background-position: 91%;
     }
-#altura input{ /*formatação do input onde será inserido a altura*/
+#input-altura{ /*formatação do input onde será inserido a altura*/
     background: white url(imagens/fita.png)  no-repeat;
     background-size: 25px;
     background-position: 91%;
     }
 
 
-input:focus{ /*quando qualquer input receber foco*/
+#tela-1 input:focus{ /*quando qualquer input receber foco*/
 outline: rgb(97, 87, 87) 2px solid;
 
 }
 
 
-label{ /*formatação para os titulos dos inputs*/
+#tela-1 label{ /*formatação para os titulos dos inputs*/
 font-size: 1.5em;
 margin: 0 10%;
 color: white;
 }
 
-#btn-calcular{ /*formatação para o botão de confirmação*/
+#btn-calcular{ /*formatação para o botão de calcular*/
 border: none;
 border-radius: 6px;
 margin-top: 30px;
@@ -72,29 +71,24 @@ height: 40px;
 font-size: 1.1em;
 font-weight: bold;
 font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-color: rgb(37, 41, 44);
+background-color: rgb(71, 148, 81);
+color: rgb(0, 0, 0);
 cursor: pointer;
 }
 
-#btn-calcular:hover {
-    background-color: rgb(197, 192, 192);
-    box-shadow: 0px 0px 5px 3px white;
+#btn-calcular:hover { /*formatação para quando passar o mouse no botão de calcular*/
+    background-color: rgb(34, 187, 29);
+    box-shadow: 0px 0px 5px 3px rgb(109, 153, 96);
     color: rgb(0, 0, 0);
 }
 
-p{
-    color: beige;
-}
-
-
-
 
 /*Formatação para a tela de resultado*/
-.display-none{
+.display-none{ /*aplicado à segunda tela (tela de resultado)*/
     display: none;
 }
 
-.display-ativo{
+.display-ativo{ /*tbm é aplicado a segunda tela, mas somente quando o botão calcular é pressionado*/
     text-align: center;
     color: white;
     width: 400px;
@@ -107,13 +101,13 @@ p{
     border-radius: 7px;
 }
 
-#tela-2 #resultado{
+#tela-2 #resultado{ /*onde informa a situação da pessoa*/
     font-size: 3em;
     text-shadow: 1px 2px 2px grey;
 }
 
 
-#btn-resultado{
+#btn-resultado{ /*botão para voltar*/
     width: 150px;
     height: 40px;
     border-radius: 3px;    
@@ -122,12 +116,13 @@ p{
     font-size: 1.1em;
     font-weight: bold;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(37, 41, 44);
+    background-color: rgb(71, 148, 81);
+    color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
 #btn-resultado:hover{
-    background-color: rgb(197, 192, 192);
+    background-color: rgb(34, 187, 29);
     box-shadow: 0px 0px 5px 3px white;
     color: rgb(0, 0, 0);
 }

@@ -8,7 +8,7 @@ function mostrar(){
 
      if(peso> 0 && altura > 0 && altura < 3 && peso < 450){
           
-          document.getElementById('container').className='display-none' //altera a classe do container para não exibir o input peso e altura
+          document.getElementById('tela-1').className='display-none' //altera a classe do container para não exibir o input peso e altura
           document.getElementById('tela-2').className='display-ativo' //altera a classe para que seja exibido o resultad
      
           let calculo = peso / (altura * altura) //realiza o cálculo e armazena na variavel
