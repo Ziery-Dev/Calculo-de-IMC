@@ -134,17 +134,29 @@ cursor: pointer;
 
 
 /*Reponsvidade*/
-@media (max-width: 575.98px) { 
+@media (max-width: 328.98px) { 
     body{
         background: url(imagens/background2.jpg) top left;
-        background-size: 200%;
+        background-size: 170%;
       }
-  }
+
+      #tela-1, #tela-2{
+        width: 95%;
+      }
+     
+    }
+@media (min-width: 329px) and (max-width: 575.98px) { 
+    body{
+        background: url(imagens/background2.jpg) top left;
+        background-size: 170%;
+      }
+     
+    }
   /*Small devices (landscape phones, 576px e maiores)*/
   @media (min-width: 576px) and (max-width: 767.98px) { 
     body{
         background: url(imagens/background2.jpg) top left;
-        background-size: 150%;
+        background-size: 130%;
       }
   }
 
